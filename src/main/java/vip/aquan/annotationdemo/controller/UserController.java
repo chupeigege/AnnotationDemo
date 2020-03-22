@@ -7,7 +7,7 @@ import vip.aquan.annotationdemo.annotation.Log;
 import vip.aquan.annotationdemo.entity.User;
 
 /**
- * @author: wcp
+ * @author: wcp1
  * @date: 2020/3/22 15:37
  * @Description: 用户控制器
  */
