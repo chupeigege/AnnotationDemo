@@ -10,7 +10,6 @@ import java.util.List;
  * @date: 2020/3/28 16:34
  * @Description:
  */
-@Repository
 public interface UserMapper {
     List<User> findList();
 }
