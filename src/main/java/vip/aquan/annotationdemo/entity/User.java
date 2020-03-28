@@ -27,4 +27,5 @@ public class User extends Validate{
     @Length(min = 6,max = 10,errorMsg = "密码长度必须是6-10位")
     private String password;
 
+
 }
