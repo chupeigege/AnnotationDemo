@@ -48,9 +48,9 @@ public class ArgsAspect {
                         break;
                     }
                 }
-            }
-            if(!flag){
-                throw new RuntimeException("访问失败,没有权限!");
+                if(!flag){
+                    throw new RuntimeException("访问失败,没有权限!");
+                }
             }
         }
 

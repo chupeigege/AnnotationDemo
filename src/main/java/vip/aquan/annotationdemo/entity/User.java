@@ -1,17 +1,8 @@
 package vip.aquan.annotationdemo.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import vip.aquan.annotationdemo.annotation.Length;
-/**
- * @author: wcp
- * @date: 15:16 2020/3/22
- * @Description:
- */
-/**
- * @author: wcp
- * @date: ${DATE} ${HOUR}:${MINUTE}
- * @Description:
- */
 /**
 *
 /**
@@ -20,6 +11,7 @@ import vip.aquan.annotationdemo.annotation.Length;
  * @Description:
  */
 @Data
+@Builder
 public class User extends Validate{
 
     @Length(min = 6,max = 10,errorMsg = "用户名长度必须是6-10位")

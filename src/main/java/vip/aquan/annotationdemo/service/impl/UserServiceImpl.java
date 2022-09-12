@@ -6,6 +6,7 @@ import vip.aquan.annotationdemo.dao.UserMapper;
 import vip.aquan.annotationdemo.entity.User;
 import vip.aquan.annotationdemo.service.UserService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,6 +20,10 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Override
     public List<User> findList() {
-        return userMapper.findList();
+//        return userMapper.findList();
+        List<User> users = new ArrayList<>();
+        users.add(User.builder().username("阿刚").password("111111").build());
+        users.add(User.builder().username("阿强").password("222222").build());
+        return users;
     }
 }

@@ -21,8 +21,8 @@ import vip.aquan.annotationdemo.entity.Validate;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.util.Arrays;
 
 /**
  * @author: wcp
@@ -78,11 +78,12 @@ public class LogAspect {
         }
 
         StringBuilder bf = new StringBuilder();
-        bf.append(" time:").append(new SimpleDateFormat().format(new Date()))
+        bf.append("Time:").append(LocalDateTime.now())
                 .append(" Class:").append(targetName)
                 .append(" Method:").append(methodName)
                 .append(" Module:").append(module)
-                .append(" Function:").append(function);
+                .append(" Function:").append(function)
+                .append(" Arguments:").append(Arrays.toString(arguments));
 
         logger.info(bf.toString());
 
